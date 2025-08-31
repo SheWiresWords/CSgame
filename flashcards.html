@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Let's Learn Java</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="flashcards-page">
+    <div class="floating-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <header class="modern-header">
+        <div class="header-content">
+            <h1 class="logo">Let's Learn Java</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="training.html" class="nav-link">Training</a>
+                <a href="flashcards.html" class="nav-link">Flashcards</a>
+                <a href="fill-in-the-blankA.html" class="nav-link">AP CSA Fill-In-The-Blank</a>
+                <a href="fill-in-the-blankP.html" class="nav-link">AP CSP Fill-In-The-Blank</a>
+
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="flashcards">
+        <div class="flashcard-container">
+            <h2>Unit 1 Concepts Flashcards</h2>
+            <div class="card-counter" id="cardCounter1">1 / 12</div>
+
+            <div class="flashcard" id="flashcard1" onclick="flipCard1()">
+                <div class="card-front">
+                    <h3 id="cardTerm1">Class</h3>
+                    <p class="flip-hint">Click to flip</p>
+                </div>
+                <div class="card-back">
+                    <p id="cardDefinition1"> </p>
+                    <p class="flip-hint">Click to flip back</p>
+                </div>
+            </div>
+
+            <div class="card-controls">
+                <button class="control-btn" onclick="prevCard1()">Previous</button>
+                <button class="control-btn" onclick="nextCard1()">Next</button>
+            </div>
+<!-- 
+            <a href="index.html" class="back-home">Back to Home</a> -->
+            <div class="flashcard-container">
+                <h2>Unit 2 Concepts Flashcards</h2>
+                <div class="card-counter" id="cardCounter2">1 / 12</div>
+
+                <div class="flashcard" id="flashcard2" onclick="flipCard2()">
+                    <div class="card-front">
+                        <h3 id="cardTerm2">Class</h3>
+                        <p class="flip-hint">Click to flip</p>
+                    </div>
+                    <div class="card-back">
+                        <p id="cardDefinition2"> </p>
+                        <p class="flip-hint">Click to flip back</p>
+                    </div>
+                </div>
+
+                <div class="card-controls">
+                    <button class="control-btn" onclick="prevCard2()">Previous</button>
+                    <button class="control-btn" onclick="nextCard2()">Next</button>
+                </div>
+                <div class="flashcard-container">
+                    <h2>Unit 3 Concepts Flashcards</h2>
+                    <div class="card-counter" id="cardCounter3">1 / 12</div>
+
+                    <div class="flashcard" id="flashcard3" onclick="flipCard3()">
+                        <div class="card-front">
+                            <h3 id="cardTerm3">Class</h3>
+                            <p class="flip-hint">Click to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <p id="cardDefinition3"> </p>
+                            <p class="flip-hint">Click to flip back</p>
+                        </div>
+                    </div>
+
+                    <div class="card-controls">
+                        <button class="control-btn" onclick="prevCard3()">Previous</button>
+                        <button class="control-btn" onclick="nextCard3()">Next</button>
+                    </div>
+                    <h2>Unit 4 Concepts Flashcards</h2>
+                    <div class="card-counter" id="cardCounter4">1 / 12</div>
+
+                    <div class="flashcard" id="flashcard4" onclick="flipCard4()">
+                        <div class="card-front">
+                            <h3 id="cardTerm4">Class</h3>
+                            <p class="flip-hint">Click to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <p id="cardDefinition4"> </p>
+                            <p class="flip-hint">Click to flip back</p>
+                        </div>
+                    </div>
+
+                    <div class="card-controls">
+                        <button class="control-btn" onclick="prevCard4()">Previous</button>
+                        <button class="control-btn" onclick="nextCard4()">Next</button>
+                    </div>
+            </div>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <p>Copyright 2025 SheWiresWords</p>
+        </div>
+    </footer>
+
+    <script src="./flashcards.js"></script>
+</body>
+</html>
 
