@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Game - Let's Learn Java</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="floating-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <header class="modern-header">
+        <div class="header-content">
+            <h1 class="logo">Let's Learn Java</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="training.html" class="nav-link">Training</a>
+                <a href="flashcards.html" class="nav-link">Flashcards</a>
+                <a href="fill-in-the-blankA.html" class="nav-link">AP CSA Fill-In-The-Blank</a>
+                <a href="fill-in-the-blankP.html" class="nav-link">AP CSP Fill-In-The-Blank</a>
+            </nav>
+        </div>
+    </header>
+    <main class="fitb"> 
+        <h1> AP CSP Fill In The Blank Game! </h1>
+        <br>
+        <h3> Directions: Read the statement, and then fill in the blank for each statement to complete it! Use the buttons to navigate through the questions! If the blank is at the start of the sentence, make sure that your answer is capitalized since the answers are case sensistive! For all answers that are numbers, please type in the answer numerically (ex. 5 instead of five). </h3>
+        <br>
+        <div class="fitbcontainer">
+            <br>
+            <h2> Unit 1 (Creative Development) Questions </h2>
+            <div class="fitbbuttons">
+                <button class="fitbbutton"> 1 </button>
+                <button class="fitbbutton"> 2 </button>
+                <button class="fitbbutton"> 3 </button>
+                <button class="fitbbutton"> 4 </button>
+                <button class="fitbbutton"> 5 </button>
+                </div>
+            <br>
+            <h4 id="show1P" class="question"></h4>
+            <input class="ansinput1"> 
+            <br>
+            <button class="fitbbutton1"> Submit Answer! </button>
+            <p id="result1" class="result"></p>
+            <br>
+                
+        </div>
+        <br>
+        <div class="fitbcontainer">
+            <br>
+            <h2> Unit 2 (Data) Questions </h2>
+            <div class="fitbbuttons">
+                <button class="fitbbutton"> 1 </button>
+                <button class="fitbbutton"> 2 </button>
+                <button class="fitbbutton"> 3 </button>
+                <button class="fitbbutton"> 4 </button>
+                <button class="fitbbutton"> 5 </button>
+                </div>
+            <br>
+            <h4 id="show2P" class="question"></h4>
+            <input class="ansinput2"> 
+            <br>
+            <button class="fitbbutton2"> Submit Answer! </button>
+            <p id="result2" class="result"></p>
+            <br>
+        </div>
+        <br>
+        <div class="fitbcontainer">
+            <br>
+            <h2> Unit 3 (Algorithims And Programming) Questions </h2>
+            <div class="fitbbuttons">
+                <button class="fitbbutton"> 1 </button>
+                <button class="fitbbutton"> 2 </button>
+                <button class="fitbbutton"> 3 </button>
+                <button class="fitbbutton"> 4 </button>
+                <button class="fitbbutton"> 5 </button>
+                </div>
+            <br>
+            <h4 id="show3P" class="question"></h4>
+            <input class="ansinput3"> 
+            <br>
+            <button class="fitbbutton3"> Submit Answer! </button>
+            <p id="result3" class="result"></p>
+            <br>
+        </div>
+        <br>
+        <div class="fitbcontainer">
+            <br>
+            <h2> Unit 4 (Computer Systems And Networks) Questions </h2>
+            <br>
+            <div class="fitbbuttons">
+                <button class="fitbbutton" data-index="0">1</button>
+                <button class="fitbbutton" data-index="1">2</button>
+                <button class="fitbbutton" data-index="2">3</button>
+                <button class="fitbbutton" data-index="3">4</button>
+                <button class="fitbbutton" data-index="4">5</button>
+              </div>
+             <br>
+              <h4 id="show4P" class="question"></h4>
+              <input class="ansinput4" type="text">
+              <br>
+              <button class="fitbbutton4">Submit Answer!</button>
+            <p id="result4" class="result"></p>
+              <br>
+        <br>
+        </div>
+        <br>
+        <div class="fitbcontainer">
+            <br>
+            <h2> Unit 5 (Impact of Computing) Questions </h2>
+            <div class="fitbbuttons">
+                <button class="fitbbutton"> 1 </button>
+                <button class="fitbbutton"> 2 </button>
+                <button class="fitbbutton"> 3 </button>
+                <button class="fitbbutton"> 4 </button>
+                <button class="fitbbutton"> 5 </button>
+                </div>
+            <br>
+            <h4 id="show5P" class="question"></h4>
+            <input class="ansinput5"> 
+            <br>
+            <button class="fitbbutton5"> Submit Answer! </button>
+            <p id="result5" class="result"></p>
+            <br>
+        </div>
+        <br>
+        
+       
+
+     </main>
+
+    
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+
+            <p>Copyright 2025 SheWiresWords</p>
+        </div>
+    </footer>
+
+    <script src="./fill-in-the-blank-CSP.js"></script>
+</body>
+</html>
