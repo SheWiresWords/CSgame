@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Let's Learn Java</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="floating-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <header class="modern-header">
+        <div class="header-content">
+            <h1 class="logo">Let's Learn Java</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="settings.html" class="nav-link">Settings</a>
+                <a href="flashcards.html" class="nav-link">Flashcards</a>
+                <a href="fill-in-the-blank-CSA.html" class="nav-link">AP CSA Fill-In-The-Blank</a>
+                <a href="fill-in-the-blank-CSP.html" class="nav-link">AP CSP Fill-In-The-Blank</a>
+            </nav>
+        </div>
+    </header>
+    <main class="fitb">
+        <h1 class="settings-title">Settings</h1>
+        <br>
+        <h3 class="settings-description">Customize your learning experience below! </h3>
+        <button id="toggle-bubbles" class="settings-button">Remove Background</button>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <p>© Copyright 2025 SheWiresWords</p>
+        </div>
+    </footer>
+
+    <script>
+        const body = document.body;
+        const bubbles = document.querySelector('.floating-bubbles');
+        const toggleButton = document.getElementById('toggle-bubbles');
+
+        if (localStorage.getItem("bubblesOff") === "true") {
+            body.classList.add("no-bubbles");
+        }
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle("no-bubbles");
+            localStorage.setItem("bubblesOff", body.classList.contains("no-bubbles"));
+        });
+    </script>
+</body>
+</html>

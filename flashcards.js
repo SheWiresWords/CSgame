@@ -321,7 +321,20 @@ const flashcards2 = [
     {
         term: "Repetition",
         definition: "When a process is repeated over and over ntil it reaches the desired outcome."
+    },
+    {
+        term: "do-while Loop",
+        definition: "A loop that executes its body at least once and then continues looping as long as the boolean condition remains true."
+    },
+    {
+        term: "Break Statement",
+        definition: "A statement used inside a loop to immediately exit the loop, regardless of the loop's boolean condition."
+    },
+    {
+        term: "Continue Statement",
+        definition: "A statement used inside a loop to skip the rest of the current iteration and move on to the next iteration of the loop."
     }
+    
 ];
 
 function updateCard2() {
@@ -444,6 +457,38 @@ const flashcards3 = [
     {
     term: "Open Source Code",
         definition: "Programmers often reuse code that is free to use and open source. Programmers need to get permission from publishers to use code that is not open source."
+    },
+    {
+    term: "Parameter",
+    definition: "A variable that is passed into a method to provide input. Parameters allow methods to use different values each time they are called."
+    },
+    {
+    term: "Algorithm",
+    definition: "A step-by-step procedure or set of instructions designed to perform a specific task or solve a problem."
+    },
+    {
+    term: "Iteration",
+    definition: "The process of repeating a set of instructions until a condition is met, usually implemented with loops like for or while loops."
+    },
+    {
+    term: "Enhanced For Loop",
+    definition: "A simplified loop for iterating through all elements in an array or collection without using an index variable."
+    },
+    {
+    term: "Recursion",
+    definition: "A programming technique where a method calls itself in order to solve a problem by breaking it down into smaller subproblems."
+    },
+    {
+    term: "Encapsulation",
+    definition: "The practice of keeping instance variables private and controlling access through public methods (accessors and mutators)."
+    },
+    {
+    term: "Inheritance",
+    definition: "A feature of object-oriented programming where one class can inherit attributes and methods from another class."
+    },
+    {
+    term: "Polymorphism",
+    definition: "The ability of different classes to be treated as instances of the same class through a common interface, often via method overriding."
     }
     
 ];

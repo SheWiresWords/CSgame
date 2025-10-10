@@ -6,6 +6,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: linear-gradient(135deg, #c2f5ff 0%, #f6ccff 50%, #d3a4fe 100%);
   background-size: 400% 400%;
@@ -317,6 +319,25 @@ main {
   z-index: 2;
 }
 
+/* Settings Page */
+.settings-button {
+    background-color: #d9cafe;
+    border: 2px solid #d9cafe;
+    border-radius: 10px; 
+    color:  #450e59;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+.settings-button:hover {
+  background-color: #11053b;
+  color:  #d9cafe;
+}
+
 /* Training Game Styles */
 .training-game {
   display: flex;
@@ -450,7 +471,7 @@ main {
   z-index: 2;
 }
 
-.restart-btn, .home-btn {
+.restart-btn, .home-btn, .settings-btn {
   background: linear-gradient(45deg, rgba(239, 205, 254, 0.8), rgba(210, 158, 255, 0.8));
   backdrop-filter: blur(20px);
   color: white;
@@ -466,7 +487,7 @@ main {
   overflow: hidden;
 }
 
-.restart-btn::before, .home-btn::before {
+.restart-btn::before, .home-btn::before, .settings-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -477,11 +498,11 @@ main {
   transition: left 0.6s ease;
 }
 
-.restart-btn:hover::before, .home-btn:hover::before {
+.restart-btn:hover::before, .home-btn:hover::before, .settings-btn:hover::before {
   left: 100%;
 }
 
-.restart-btn:hover, .home-btn:hover {
+.restart-btn:hover, .home-btn:hover, .settings-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(136, 75, 210, 0.3);
 }
@@ -621,13 +642,14 @@ main {
 
 /* Footer */
 .modern-footer {
-  background: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   backdrop-filter: blur(10px);
   margin-top: auto;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-content {
+  -webkit-text-fill-color: #11053b;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -825,6 +847,13 @@ main {
   border-radius: 25px;
 }
 
+.no-bubbles .floating-bubbles {
+  display: none;
+}
+
+.no-bubbles {
+  background: #bc9ff7;
+}
 
 .fitbbutton1
 {
